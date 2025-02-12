@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>ОВР Задание 9</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+</head>
+<body>
+    <canvas id="backgroundCanvas"></canvas>
+    <script src="bg.js"></script>
+    <div id="main-div" class="main-div">
+        <h2>Задание 9</h2>
+        <p>Расставьте коэффициенты в реакции, используя метод электронного баланса, и укажите окислитель и восстановитель.</p>
+        <p>Если коэффициент равен еденице введите в поле "<b>1</b>"</p><br>
+        <form id="task3-form">
+            <div id="task-div" class="main-div">
+                <p>
+                    <input maxlength="2" class="k-input" name="1" required>FeSO<sub>4</sub> +
+                    <input maxlength="1" class="k-input" name="2" required>KMnO<sub>4</sub> +
+                    <input maxlength="2" class="k-input" name="3" required>H<sub>2</sub>SO<sub>4</sub> →
+                    <input maxlength="2" class="k-input" name="4" required>Fe<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub> +
+                    <input maxlength="1" class="k-input" name="5" required>MnSO<sub>4</sub> +
+                    <input maxlength="1" class="k-input" name="6" required>K<sub>2</sub>SO<sub>4</sub> +
+                    <input maxlength="2" class="k-input" name="7" required>H<sub>2</sub>O
+                </p>
+                <br>
+                <p>Mn<sup>+7</sup>+5e<sup>-</sup>=Mn<sup>+2</sup>
+                    <input maxlength="1" class="k-input" name="8" required>
+                    <select name="9" required>
+                        <option value="окислитель">Окислитель</option>
+                        <option value="восстановитель">Восстановитель</option>
+                    </select>
+                </p>
+                <p>2Fe<sup>+2</sup>-2е<sup>-</sup>=2Fe<sup>+3</sup>
+                    <input maxlength="1" class="k-input" name="10" required>
+                    <select name="11" required>
+                        <option value="окислитель">Окислитель</option>
+                        <option value="восстановитель">Восстановитель</option>
+                    </select>
+                </p>
+                <br>
+                <button class="next-button" type="submit">Проверить</button>
+            </div>
+        </form>
+        <div id="result"></div> <!-- Контейнер для вывода результата -->
+    </div>
+    <script src="task9.js"></script>
+</body>
+</html>
