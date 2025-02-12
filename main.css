@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto; /* Добавляем вертикальную прокрутку */
+    background-color: #aaa; /* Темный фон */
+}
+
+.definition{
+    font-weight: bold;
+    font-style: italic;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed; /* Фиксированное положение */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Помещаем canvas позади всех элементов */
+    pointer-events: none; /* Делаем canvas невыделяемым */
+}
+
+p, tr, div, li, body{
+    color: #000; /* Светлый цвет текста */
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.k-input{
+    width: 20px;
+    background-color: #111;
+    color: #000;
+}
+ 
+button {
+    background-color: #eee;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 10em;
+    border-radius: 1rem;
+    color: lightcoral;
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+   }
+   
+   button:active {
+    color: white;
+    box-shadow: 0 0.2rem #dfd9d9;
+    transform: translateY(0.2rem);
+   }
+   
+   button:hover:not(:disabled) {
+    background: lightcoral;
+    color: white;
+    text-shadow: 0 0.1rem #bcb4b4;
+   }
+   
+   button:disabled {
+    cursor: auto;
+    color: grey;
+   }
+
+#main-div {
+    position: relative; /* Относительное позиционирование */
+    margin: 50px auto; /* Центрирование по горизонтали */
+    background-color: rgba(255, 255, 255, 0.03); /* Полупрозрачный белый фон */
+    border-radius: 10px; /* Закругленные углы */
+    padding: 10px; /* Отступы внутри блока */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень для визуального выделения */
+    backdrop-filter: blur(5px); /* Размытие фона */
+    -webkit-backdrop-filter: blur(5px); /* Поддержка размытия в Safari */
+    width: fit-content; /* Подстраивается под содержимое */
+    max-width: 80%; /* Максимальная ширина */
+    text-align: center; /* Выравнивание текста по центру */
+    color: #000; /* Белый цвет текста */
+}

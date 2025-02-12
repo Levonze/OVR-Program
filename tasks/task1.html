@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>ОВР Задание 1</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+</head>
+<body>
+    <canvas id="backgroundCanvas"></canvas>
+    <script src="bg.js"></script>
+    <div id="main-div" class="main-div">
+        <h2>Задание 1</h2>
+        <p>Решите все на бумаге, а после впишите ответы.</p>
+        <p>Если коэффициент равен еденице введите в поле "<b>1</b>"</p>
+        <h3>Метод электронного баланса</h3>
+        <p>Расставьте коэффициенты в реакциях, используя метод электронного баланса, укажите окислитель и восстановитель</p>
+        <form id="task1-form" action="/submit" method="POST">
+            <div id="task-div" class="main-div">
+                <p>
+                    <input maxlength="1" min="1" max="9" type="number" class="k-input" name="1" required>CuSO4 + 
+                    <input maxlength="1" min="1" max="9" type="number" class="k-input" name="2" required>P + 
+                    <input maxlength="1" min="1" max="9" type="number" class="k-input" name="3" required>H2O → 
+                    <input maxlength="1" min="1" max="9" type="number" class="k-input" name="4" required>Cu + 
+                    <input maxlength="1" min="1" max="9" type="number" class="k-input" name="5" required>H3PO4 + 
+                    <input maxlength="1" min="1" max="9" type="number" class="k-input" name="6" required>H2SO4
+                </p>
+                <br>
+                <p>Cu<sup>+2</sup>+2e<sup>-</sup>=Cu<sup>0</sup> → 
+                    <input maxlength="1" min="1" max="9" type="number" class="k-input" name="7" required>
+                    <select name="8" required>
+                        <option value="окислитель">Окислитель</option>
+                        <option value="восстановитель">Восстановитель</option>
+                    </select>
+                </p>
+                <p>Р<sup>0</sup>-5е<sup>-</sup>=Р<sup>+5</sup> → 
+                    <input maxlength="1" min="1" max="9" type="number" class="k-input" name="9" required>
+                    <select name="10" required>
+                        <option value="окислитель">Окислитель</option>
+                        <option value="восстановитель">Восстановитель</option>
+                    </select>
+                </p>
+                <p><div class="task-div" id="task-div"></div></p>
+                <br>
+                <button class="next-button" type="submit">Проверить</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="task1.js"></script>
+</html>
