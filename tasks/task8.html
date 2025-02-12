@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>ОВР Задание 8</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+</head>
+<body>
+    <canvas id="backgroundCanvas"></canvas>
+    <script src="bg.js"></script>
+    <div id="main-div" class="main-div">
+        <h2>Задание 7</h2>
+        <p>Расставьте коэффициенты в реакции, используя метод электронного баланса, и укажите окислитель и восстановитель.</p>
+        <p>Если коэффициент равен еденице введите в поле "<b>1</b>"</p><br>
+        <form id="task3-form">
+            <div id="task-div" class="main-div">
+                <p>
+                    <input maxlength="1" class="k-input" name="1" required>Al +
+                    <input maxlength="2" class="k-input" name="2" required>HNO<sub>3</sub> →
+                    <input maxlength="1" class="k-input" name="3" required>Al(NO<sub>3</sub>)<sub>3</sub> +
+                    <input maxlength="1" class="k-input" name="4" required>NH<sub>4</sub>NO<sub>3</sub> +<br>
+                    <input maxlength="1" class="k-input" name="5" required>H<sub>2</sub>O
+                </p>
+                <br>
+                <p>N<sup>+5</sup>+8e<sup>-</sup>=N<sup>-3</sup>
+                    <input maxlength="1" class="k-input" name="6" required>
+                    <select name="7" required>
+                        <option value="окислитель">Окислитель</option>
+                        <option value="восстановитель">Восстановитель</option>
+                    </select>
+                </p>
+                <p>Al<sup>0</sup>-3е<sup>-</sup>=Al<sup>+3</sup>
+                    <input maxlength="1" class="k-input" name="8" required>
+                    <select name="9" required>
+                        <option value="окислитель">Окислитель</option>
+                        <option value="восстановитель">Восстановитель</option>
+                    </select>
+                </p>
+                <br>
+                <button class="next-button" type="submit">Проверить</button>
+            </div>
+        </form>
+        <div id="result"></div> <!-- Контейнер для вывода результата -->
+    </div>
+    <script src="task8.js"></script>
+</body>
+</html>
