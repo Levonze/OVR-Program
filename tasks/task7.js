@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // Выводим результат
             const resultDiv = document.getElementById('result');
             if (isCorrect) {
-                resultDiv.innerHTML = `<p><img src="right.png" height="25"> Все верно!<br><a href="task8.html">Задание 7</a></p>`;
+                resultDiv.innerHTML = `<p><img src="right.png" height="25"> Все верно!<br><a href="task8.html">Задание 8</a></p>`;
             } else {
                 resultDiv.innerHTML = `<p><img src="wrong.png" height="25"> Есть ошибки в ответе!</p>`;
             }
