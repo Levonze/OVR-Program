@@ -5,7 +5,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 const points = [];
-const pointCount = 50; // Количество точек
+const pointCount = 0; // Количество точек
 const maxDistance = 30; // Максимальное расстояние для соединения точек
 
 // Создаем точки
