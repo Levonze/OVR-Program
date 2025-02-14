@@ -6,16 +6,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Правильные ответы
             const correctAnswers = {
-                1: "4",
-                2: "1",
-                3: "18",
-                4: "6",
-                5: "1",
-                6: "18",
-                7: "1",
-                8: "окислитель",
-                9: "2",
-                10: "восстановитель"
+                1: "8",
+                2: "30",
+                3: "8",
+                4: "3",
+                5: "9",
+                6: "3",
+                7: "окислитель",
+                8: "8",
+                9: "восстановитель"
             };
 
             // Получаем все поля ввода и выбора
@@ -34,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // Выводим результат
             const resultDiv = document.getElementById('result');
             if (isCorrect) {
-                resultDiv.innerHTML = `<p><img src="right.png" height="25"> Все верно!<br><a href="task11.html">Задание 11</a></p>`;
+                resultDiv.innerHTML = `<p><img src="right.png" height="25"> Все верно!<br><a href="task12.html">Задание 12</a></p>`;
             } else {
                 resultDiv.innerHTML = `<p><img src="wrong.png" height="25"> Есть ошибки в ответе!</p>`;
             }
