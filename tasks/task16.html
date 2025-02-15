@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>ОВР Задание 16</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+</head>
+<body>
+    <canvas id="backgroundCanvas"></canvas>
+    <script src="bg.js"></script>
+    <div id="main-div" class="main-div">
+        <h2>Задание 16</h2>
+        <p>Расставьте коэффициенты в реакции, используя метод электронного баланса, и укажите окислитель и восстановитель.</p>
+        <p>Если коэффициент равен единице введите в поле "<b>1</b>"</p><br>
+        <form id="task3-form">
+            <div id="task-div" class="main-div">
+                <p>
+                    <input maxlength="1" class="k-input" name="1" required>NaClO3 +
+                    <input maxlength="1" class="k-input" name="2" required>MnO2 +
+                    <input maxlength="1" class="k-input" name="3" required>NaOH →
+                    <input maxlength="1" class="k-input" name="4" required>Na2MnO4 +
+                    <input maxlength="1" class="k-input" name="5" required>NaCl +
+                    <input maxlength="1" class="k-input" name="6" required>H2O
+                </p>
+                <br>
+                <p>Cl<sup>+5</sup>+6e<sup>-</sup>=Cl<sup>-1</sup>
+                    <input maxlength="1" class="k-input" name="7" required>
+                    <select name="8" required>
+                        <option value="окислитель">Окислитель</option>
+                        <option value="восстановитель">Восстановитель</option>
+                    </select>
+                </p>
+                <p>Mn<sup>+4</sup>-2e<sup>-</sup>=Mn<sup>+6</sup>
+                    <input maxlength="1" class="k-input" name="9" required>
+                    <select name="10" required>
+                        <option value="окислитель">Окислитель</option>
+                        <option value="восстановитель">Восстановитель</option>
+                    </select>
+                </p>
+                <br>
+                <button class="next-button" type="submit">Проверить</button>
+            </div>
+        </form>
+        <div id="result"></div> <!-- Контейнер для вывода результата -->
+    </div>
+    <script src="task16.js"></script>
+</body>
+</html>
