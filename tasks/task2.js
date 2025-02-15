@@ -30,8 +30,8 @@ document.getElementById('task2-form').addEventListener('submit', function (event
     // Выводим результат
     const resultDiv = document.getElementById('result');
     if (isCorrect) {
-        resultDiv.innerHTML = `<p><img src="right.png" height="25"> Все верно!<br><a href="task3.html">Задание 3</a></p>`;
+        resultDiv.innerHTML = `<p><img src="/assets/right.png" height="25"> Все верно!<br><a href="task3.html">Задание 3</a></p>`;
     } else {
-        resultDiv.innerHTML = `<p><img src="wrong.png" height="25"> Есть ошибки в ответе!</p>`;
+        resultDiv.innerHTML = `<p><img src="/assets/wrong.png" height="25"> Есть ошибки в ответе!</p>`;
     }
 });

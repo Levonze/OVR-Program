@@ -31,9 +31,9 @@ document.getElementById('task1-form').addEventListener('submit', function (event
     // Выводим результат
     const resultDiv = document.createElement('p');
     if (isCorrect) {
-        resultDiv.innerHTML = `<img src="right.png" height="25"> Все верно!<br><a href="task2.html">Задание 2</a>`;
+        resultDiv.innerHTML = `<img src="/assets/right.png" height="25"> Все верно!<br><a href="task2.html">Задание 2</a>`;
     } else {
-        resultDiv.innerHTML = `<img src="wrong.png" height="25"> Есть ошибки в ответе!`;
+        resultDiv.innerHTML = `<img src="/assets/wrong.png" height="25"> Есть ошибки в ответе!`;
     }
 
     // Удаляем предыдущий результат (если есть)
