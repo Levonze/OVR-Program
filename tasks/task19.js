@@ -7,13 +7,13 @@ document.addEventListener('DOMContentLoaded', function () {
             // Правильные ответы
             const correctAnswers = {
                 1: "1",
-                2: "8",
+                2: "4",
                 3: "1",
                 4: "4",
                 5: "4",
-                6: "1",
+                6: "3",
                 7: "окислитель",
-                8: "7",
+                8: "1",
                 9: "восстановитель"
             };
 
